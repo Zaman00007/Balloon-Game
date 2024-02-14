@@ -11,10 +11,13 @@ This is a simple two-page application built with React. It consists of a login p
 
 1. Clone the repository:
 
-2. npm i react-router-dom@5.3.4 (make sure to install  the specific version)
+2. install the necessary dependencies: 
+    npm i react-router-dom@5.3.4 (make sure to install  the specific version)
+    npm i js-cookie
 
 3. Run the backend server : 
     -->cd api
+    -->npm i
     -->npm start
 
 4. Run the frontend server :
