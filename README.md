@@ -4,8 +4,9 @@ This is a simple two-page application built with React. It consists of a login p
 
 ## Features
 
-- **Login Page**: Unauthorized users are landed on this page. They can click on a button to navigate to the game page.
+- **Login Page**: Unauthorized users are landed on this page. They can login to navigate to the game page.
 - **Game Page**: Users can pump a balloon by clicking on it. If they pump it too much, the balloon pops.
+- **Unauthorized Page**: This page checks for any unauthorized access to the game without any cookie.
 
 ## Getting Started
 
