@@ -12,16 +12,16 @@ This is a simple two-page application built with React. It consists of a login p
 1. Clone the repository:
 
 2. install the necessary dependencies: 
-    npm i react-router-dom@5.3.4 (make sure to install  the specific version)
-    npm i js-cookie
+    - npm i react-router-dom@5.3.4 (make sure to install  the specific version)
+    - npm i js-cookie
 
 3. Run the backend server : 
-    -->cd api
-    -->npm i
-    -->npm start
+    - cd api
+    - npm i
+    - npm start
 
 4. Run the frontend server :
-    -->npm start     
+    - npm start     
 
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
