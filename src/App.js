@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import react from "react";
 import './App.css';
+import Home from "./Home";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import PrivateRoute from "./PrivateRoute";
+import Unauthorized from "./Unauthorized";
+import Game from "./Game";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route path="/" exact >
+            <Home/>
+          </Route>
+          <PrivateRoute path="/Game" exact >
+            <Game/>
+          </PrivateRoute>
+          <Route path="/Unauthorized" exact >
+            <Unauthorized/>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
